@@ -129,39 +129,49 @@
                 <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque 
                    cubilia ac in adipiscing  integer massa adipiscing id nisi accumsan pellentesque amet id arcu magna.</p>
 
-                <form action="#" method="post">
+                <div class="row">
+                    <div class="col-2-3">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="nome">Nome</label>
+                                    <input placeholder="Nome Completo" type="text" name="Nome" id="nome">
+                                </div>
+                                <div class="col-2">
+                                    <label for="email">Email</label>
+                                    <input placeholder="Email" type="text" name="Email" id="email">
+                                </div>
+                            </div>
 
-                    <label for="nome">Nome</label>
-                    <input type="text" name="Nome" id="nome">
+                            <label for="mensagem">Digite sua mensagem ...</label>
+                            <textarea placeholder="Mensagem" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        
+                            <input type="submit" value="Enviar Mensagem" class=" button-default 
+                            button-default-stroke button-default-big">
+                        </form>
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="text" name="Email" id="email">
-
-                    <label for="mensagem">Digite sua mensagem...</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-
-                    <input type="submit" value="Enviar Mensagem">
-
-                </form>
-
-                <address>
+                    <div class="col-1-3">
+                        <address>
                     
-                    <p>
-                        <span>Endereço</span>
-                        1234 Somewhere Rd. Nashville, TN 00000 United States
-                    </p>
-
-                    <p>
-                        <span>Telefone</span>
-                        000-000-000
-                    </p>
-
-                    <p>
-                        <span>E-mail</span>
-                        email@server.com
-                    </p>
-
-                </address>
+                            <p>
+                                <span>Endereço</span>
+                                1234 Somewhere Rd. Nashville, TN 00000 United States
+                            </p>
+        
+                            <p>
+                                <span>Telefone</span>
+                                000-000-000
+                            </p>
+        
+                            <p>
+                                <span>E-mail</span>
+                                email@server.com
+                            </p>
+        
+                        </address>
+                    </div>
+                </div><!-- row -->
 
             </section>
 
