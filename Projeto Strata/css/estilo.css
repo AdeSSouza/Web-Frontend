@@ -103,14 +103,16 @@ input, label, textarea{
     box-sizing: border-box;
 }
 
-input, textarea{
+input, textarea, select{
     background: #efefef;
     padding: 15px;
     border-radius: 5px;
     border: 3px solid transparent;
     margin-bottom: 15px;
 }
-
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
 input:focus, textarea:focus{
     border: 3px solid #49bf9d;
     outline: none;
