@@ -57,6 +57,12 @@ blockquote{
     margin: 2em 0;
     padding: .5em 0 .5em 1.5em;
 }
+.blockquote p{
+    margin-bottom: .5em;
+}
+.blockquote p:last-child{
+    margin-bottom: 0;
+}
 
 code{
     background: #f7f7f7;
@@ -79,6 +85,13 @@ ul, ol{
 }
 li{
     padding-left: .5em;
+}
+.hidden{
+    width: o;
+    height: o;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
 }
 .ul-alternate{
     list-style-type: none;
