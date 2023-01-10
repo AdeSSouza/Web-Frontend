@@ -338,3 +338,9 @@ textarea{
 .col-2-3 + .col-1-3, .col-1-3 + .col-2-3{
     margin-left: 2%;
 }
+.img-left{
+    float: left;
+}
+.img-right{
+    float: right;
+}
