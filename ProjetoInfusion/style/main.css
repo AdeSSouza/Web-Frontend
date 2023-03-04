@@ -1,10 +1,18 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 img{
     max-width: 100%;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .header{
@@ -103,4 +111,84 @@ img{
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.people-cards{
+    margin-top: 2.5em;
+}
+.people-cards__card{
+    
+}
+.people-cards__card:hover{
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
+.people-cards__card:hover .people-cards__avatar img{
+   transform: translateY(-50%);
+}
+.people-cards__card:hover .people-cards__title,
+.people-cards__card:hover .people-cards__text{
+    color: #63c6ae;
+} 
+
+.people-cards__image{
+    width: 100%;
+}
+.people-cards__avatar{
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+}
+.people-cards__content{
+    text-align: center;
+    padding: 40px 25px 10px;
+    border-left: 5px solid #dbe1e7;
+}
+.people-cards__title{
+    color: #737c85;
+    font-size: 21px;
+    font-weight: normal;
+}
+.people-cards__text{
+    color: #929da5;
+    font-size: 14px;
+}
+
+.content{
+    background: #f8f9f9;
+    padding: 20px 0 80px;
+    border-top: 1px solid #e3e3e3;
+}
+.content h3{
+    color: #737c85;
+    font-size: 21px;
+    padding-top: 40px;
+    font-weight: 400;
+}
+.content p{
+    color: #929da5;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+.button{
+    padding: 15px 40px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: background .5s;
+}
+.button:hover{
+    background-color: #929da5;
+}
+.button-primary{
+    background-color: #63c6ae;
+    color: white;
+}
+.button-secondary{
+    background-color: #455357;
+    color: white;
 }
