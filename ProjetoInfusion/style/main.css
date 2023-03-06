@@ -13,6 +13,7 @@ img{
     margin-left: auto;
     padding-left: 1em;
     padding-right: 1em;
+    max-width: 980px;
 }
 
 .header{
@@ -31,6 +32,7 @@ img{
     font-weight: bold;
     color: #fff;
     float: left;
+    text-align: right;
 }
 
 .header__nav{
@@ -264,6 +266,10 @@ img{
     text-decoration: none;
 }
 
+.footer__logo{
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 1024px) {
     .header{
         position: fixed;
@@ -297,5 +303,29 @@ img{
 
     .header__nav a{
         background: white;
+    }
+
+    .people-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+
+    .content .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .last-articles__thumbs{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footer .container{
+        display: flex;
+    }
+
+    .footer .container > * {
+        margin: 1.5em;
     }
 }
