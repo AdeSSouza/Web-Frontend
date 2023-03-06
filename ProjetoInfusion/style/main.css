@@ -45,7 +45,6 @@ img{
     background: #242a2c;
     text-align: center;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-   
 }
 .header__nav a{
     text-decoration: none;
@@ -263,4 +262,40 @@ img{
     display: block;
     font-weight: 600;
     text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .header{
+        position: fixed;
+    }
+
+    .logo-text{
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .header__btnMenu{
+        display: none;
+    }
+
+    .header__nav{
+        float: left;
+        width: 75%;
+        clear: none;
+        max-width: 800px;
+    }
+
+    .header__nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header__nav li{
+        border-bottom: none;
+        flex-grow: 1;
+    }
+
+    .header__nav a{
+        background: white;
+    }
 }
