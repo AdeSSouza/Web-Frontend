@@ -8,4 +8,18 @@
         toggleBtn: '.header__btnMenu',
         widthEnabled: 1024
     })
+
+    var carroselImgs = new Carousel({
+        container: '.laptop-slider .slideshow',
+        itens: 'figure',
+        btnPrev: '.prev',
+        btnNext: '.next'
+    })
+
+    var carroselQuotes = new Carousel({
+        container: '.quote-slideshow',
+        itens: 'figure',
+        btnPrev: '.prev',
+        btnNext: '.next'
+    })
 })()
