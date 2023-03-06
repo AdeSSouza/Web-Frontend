@@ -122,10 +122,14 @@
           </div>
         </section>
       
-        <section>
-          <h2>Latest Articles</h2>
-
-          <div>
+        <section class="last-articles">
+          <div class="last-articles__title">
+            <div class="container">
+              <h2>Latest Articles</h2>
+            </div>
+          </div>
+          
+          <div class="last-articles__thumbs">
               <a href="#"><img src="img/articles/01.jpg" alt=""></a>
               <a href="#"><img src="img/articles/02.jpg" alt=""></a>
               <a href="#"><img src="img/articles/03.jpg" alt=""></a>
@@ -141,20 +145,20 @@
           </div>
         </section>
 
-        <div>            
-          <div>
+        <div class="laptop-slider">            
+          <div class="slideshow">
             <figure><img alt="" src="img/slider/slide-01.png" /></figure>
             <figure><img alt="" src="img/slider/slide-02.png" /></figure>
             <figure><img alt="" src="img/slider/slide-01.png" /></figure>
             <figure><img alt="" src="img/slider/slide-02.png" /></figure>
-            <span class="prev"><i class="fas fa-angle-left fa-4x"></i></span>
-            <span class="next"><i class="fas fa-angle-right fa-4x"></i></span>
-          </div>                    
+            <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
+            <span class="next" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
+          </div>                      
         </div>
         
-        <section>
+        <section class="quote-container">
 
-          <div>
+          <div class="quote-slideshow">
             <figure>
               <h2>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. </h2>
               <figcaption>
@@ -169,25 +173,34 @@
             </figure>
           </div>
           
-          <span class="prev"><i class="fas fa-angle-left fa-2x"></i></span>
-          <span class="next"><i class="fas fa-angle-right fa-2x"></i></span>
+          <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-2x"></i></span>
+          <span class="next" style="display: none;"><i class="fas fa-angle-right fa-2x"></i></span>
           
         </section>
 
-        <footer>
-          <h2>Infusion</h2>
-        
-          <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+        <footer class="footer">
 
-          <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+          <div class="container">
+            
+            <h2>Infusion</h2>
+          
+          
+            <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
 
-          <ul>
-            <li><a href="#">List One</a></li>
-            <li><a href="#">Page Two</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-          </ul>
+            <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+
+            <ul class="footer__links">
+              <li><a href="#">List One</a></li>
+              <li><a href="#">Page Two</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Contact Me</a></li>
+            </ul>
+            
+          </div>
+
         </footer>
+
     </body>
+
 </html>
