@@ -11,13 +11,15 @@ import {
     orderBy,
     where,
     doc,
-    deleteDoc
+    deleteDoc,
+    updateDoc
 } from 'firebase/firestore';
 
 
 export default function Admin(){
     const [tarefaInput, setTarefaInput] = useState('');
     const [user, setUser] = useState({})
+    const [edit, setEdit] = useState({})
 
     const [tarefas, setTarefas] = useState([]);
 
@@ -59,6 +61,11 @@ export default function Admin(){
             return
         }
 
+        if(edit?.id){
+            handleUpdateTarefa()
+            return
+        }
+
         await addDoc(collection(db, "tarefas"), {
             tarefa: tarefaInput,
             created: new Date(),
@@ -83,19 +90,47 @@ export default function Admin(){
         await deleteDoc(docRef)
     }
 
+    function editTarefa(item){
+        setTarefaInput(item.tarefa)
+        setEdit(item)
+    }
+
+    async function handleUpdateTarefa(){
+        const docRef = doc(db, "tarefas", edit?.id)
+        await updateDoc(docRef, {
+            tarefa: tarefaInput
+        })
+        .then(() =>{
+            console.log("Tafera atualizada")
+            setTarefaInput('')
+            setEdit({})
+        })
+        .catch(() => {
+            console.log("Erro ao atualizar tarefa")
+            setTarefaInput('')
+            setEdit({})
+        })
+    }
+
     return(
         <div className='admin-container'>
 
             <h1>Minhas tarefas</h1>
 
             <form className='form' onSubmit={handleRegister}>
+
                 <textarea
                 placeholder='Digite sua tarefa...'
                 value={tarefaInput}
                 onChange={(e) => setTarefaInput(e.target.value)}
                 />
 
-                <button className='btn-register' type='submit'>Registrar Tarefa</button>
+                {Object.keys(edit).length > 0 ? (
+                    <button className='btn-register' style={{ backgroundColor: '#6add39', color: '#000' }} type='submit'>Atualizar Tarefa</button>
+                ) : (
+                    <button className='btn-register' type='submit'>Registrar Tarefa</button>
+                )}
+                
             </form>
 
             {tarefas.map((item) => (
@@ -104,7 +139,7 @@ export default function Admin(){
                 <p>{item.tarefa}</p>
 
                 <div>
-                    <button>Editar</button>
+                    <button onClick={() => editTarefa(item)} >Editar</button>
                     <button onClick={() => deleteTarefa(item.id)} className='btn-delete'>Concluir</button>
                 </div>
 
