@@ -1,1 +1,1 @@
-Projetos e Treinamento Utilizando React.
+Projetos e Treinamentos em Frontend utilizando React.
