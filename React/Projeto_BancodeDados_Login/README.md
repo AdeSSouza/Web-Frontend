@@ -1,3 +1,5 @@
+Projeto com banco de dados e login utilizando React e Firebase
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
