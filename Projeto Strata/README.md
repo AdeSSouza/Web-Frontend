@@ -1,1 +1,1 @@
-Treinamento em HTML e CSS.
+Treinamento em HTML e CSS intermediário.
