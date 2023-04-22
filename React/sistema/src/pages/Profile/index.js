@@ -1,11 +1,16 @@
 import { useContext, useState } from 'react';
 import Header from '../../components/Header';
 import Title from '../../components/Title';
+import { doc, updateDoc } from 'firebase/firestore';
+import { db, storage } from '../../services/firebaseConnection';
 
 import { FiSettings, FiUpload } from 'react-icons/fi';
 import avatar from '../../assets/avatar.png';
 import { AuthContext } from '../../contexts/auth';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+
 import './profile.css';
+
 
 export default function Profile(){
 
@@ -33,6 +38,60 @@ export default function Profile(){
     }
 
 
+    async function handleUpload(){
+        const currentUid = user.uid;
+        const uploadRef = ref(storage, `images/${currentUid}/${imageAvatar.name}`)
+
+        const uploadTask = uploadBytes(uploadRef, imageAvatar)
+        .then((snapshot) => {
+            getDownloadURL(snapshot.ref).then( async (downloadURL) => {
+                 let urlFoto = downloadURL;
+
+                 const docRef = doc(db, "users", user.uid)
+                 await updateDoc(docRef, {
+                    avatarUrl: urlFoto,
+                    nome: nome,
+                 })
+                 .then(() => {
+                    let data = {
+                        ...user,
+                        nome: nome,
+                        avatarUrl: urlFoto,
+                    }
+
+                    setUser(data);
+                    storageUser(data);
+
+                 })
+            })
+        })
+    }
+
+    async function hadleSubmit(e){
+        e.preventDefault();
+
+        if(imageAvatar === null && nome !== ''){
+            // Atualizar apenas o nome
+            const docRef = doc(db, "users", user.uid)
+            await updateDoc(docRef, {
+                nome: nome,
+            })
+            .then(() =>{
+                let data = {
+                    ...user,
+                    nome: nome,
+                }
+
+                setUser(data);
+                storageUser(data);
+            })
+        }else if(nome !== '' && imageAvatar !== null){
+            // atualizar nome e foto
+            handleUpload()
+        }
+
+    }
+
     return(
         <div>
             <Header/>
@@ -44,7 +103,7 @@ export default function Profile(){
 
                 <div className='container'>
 
-                    <form className='form-profile'>
+                    <form className='form-profile' onSubmit={hadleSubmit} >
 
                         <label className='label-avatar'>
 
