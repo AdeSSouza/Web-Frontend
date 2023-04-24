@@ -42,11 +42,15 @@ export default function Dashboard(){
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-aria-label="Cliente">Mercado Esquina</td>
-                                <td data-aria-label="Assunto">Pão</td>
-                                <td data-aria-label="Status">Aberto</td>
-                                <td data-aria-label="Cadastrado">2023</td>
-                                <td data-aria-label="#">
+                                <td data-label="Cliente">Mercado</td>
+                                <td data-label="Assunto">Pão</td>
+                                <td data-label="Status">
+                                    <span className="badge" style={{ backgroundColor: '#999'}}>
+                                        Em aberto
+                                    </span>
+                                </td>
+                                <td data-label="Cadastrado">2023</td>
+                                <td data-label="#">
                                     <button className="action" style={{ backgroundColor: '#3583f6' }}>
                                         <FiSearch color="#fff" size={17} />
                                     </button>
@@ -56,6 +60,28 @@ export default function Dashboard(){
                                     </button>
                                 </td>
                             </tr>
+
+
+                            <tr>
+                                <td data-label="Cliente">Pet</td>
+                                <td data-label="Assunto">Pão</td>
+                                <td data-label="Status">
+                                    <span className="badge" style={{ backgroundColor: '#999'}}>
+                                        Em aberto
+                                    </span>
+                                </td>
+                                <td data-label="Cadastrado">2023</td>
+                                <td data-label="#">
+                                    <button className="action" style={{ backgroundColor: '#3583f6' }}>
+                                        <FiSearch color="#fff" size={17} />
+                                    </button>
+
+                                    <button className="action" style={{ backgroundColor: '#f6a935' }} >
+                                        <FiEdit2 color="#fff" size={17} />
+                                    </button>
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
 
