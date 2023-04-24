@@ -4,6 +4,11 @@ import Title from '../../components/Title';
 import { useState } from 'react';
 import { FiUser } from 'react-icons/fi';
 
+import { db } from '../../services/firebaseConnection';
+import { addDoc, collection } from 'firebase/firestore';
+
+import { toast } from 'react-toastify';
+
 export default function Customers(){
 
     const [nome, setNome] = useState('');
@@ -11,10 +16,27 @@ export default function Customers(){
     const [endereco, setEndereco] = useState('');
 
 
-    function handleRegister(e){
+    async function handleRegister(e){
         e.preventDefault();
 
-        
+        if(nome !== '' & cnpj!== '' && endereco !== ''){
+            await addDoc(collection(db, "customers"), {
+                nomeFantasia: nome,
+                cnpj: cnpj,
+                endereco: endereco
+            })
+            .then(() => {
+                setNome('')
+                setCnpj('')
+                setEndereco('')
+                toast.success("Empresa Registrada!")
+            })
+            .catch((error) => {
+                toast.error("Erro ao cadastrar")
+            })
+        }else{
+            toast.error("Preencha todos os campos")
+        }
     }
 
     return(
