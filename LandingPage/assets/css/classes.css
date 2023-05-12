@@ -1,12 +1,13 @@
 .main-bg {
-  background-image: url('../img/main-bg.png');
+  /*background-image: url('../img/main-bg.png');*/
+  background-color: var(--bg-color);
   background-size: cover;
   background-position: center center;
   color: var(--primary-color);
 }
 
 .white-bg {
-  background: #AFEEEE;
+  background: var(--light-gray-color);
   color: var(--primary-color);
 }
 
