@@ -4,9 +4,15 @@
   background-size: cover;
   background-position: center center;
   color: var(--primary-color);
+  position: relative;
 }
 
 .white-bg {
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+
+.yellow-bg {
   background: var(--light-gray-color);
   color: var(--primary-color);
 }
@@ -22,7 +28,7 @@
 }
 
 .menu-spacing {
-  height: 65px;
+  height: 6.5rem;
 }
 
 body .full-width {
