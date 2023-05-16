@@ -1,5 +1,4 @@
-
-.filme-info{
+.filme-info {
     margin: 0 auto;
     margin-top: 18px;
     display: flex;
@@ -8,11 +7,11 @@
     padding: 0 8px;
 }
 
-.filme-info h1{
+.filme-info h1 {
     margin: 14px 0;
 }
 
-.filme-info img{
+.filme-info img {
     border-radius: 8px;
     width: 800px;
     max-width: 100%;
@@ -20,15 +19,15 @@
     object-fit: cover;
 }
 
-.filme-info h3{
+.filme-info h3 {
     margin-top: 14px;
 }
 
-.filme-info span{
+.filme-info span {
     margin: 8px 0;
 }
 
-.area-buttons button{
+.area-buttons button {
     margin-right: 12px;
     margin-top: 14px;
     margin-left: 0;
@@ -39,21 +38,21 @@
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.5s;
+    background-color: transparent;
 }
 
-.area-buttons button:hover{
-    background-color: #116feb;
+.area-buttons button:hover {
+    background-color: #273746;
     color: #fff;
 }
 
-.area-buttons a{
+.area-buttons a {
     text-decoration: none;
     color: #000;
     transition: all 0.5s;
 
 }
 
-.area-buttons a:hover{
+.area-buttons a:hover {
     color: #fff;
 }
-

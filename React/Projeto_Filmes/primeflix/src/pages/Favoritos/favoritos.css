@@ -1,24 +1,23 @@
-
-.meus-filmes{
+.meus-filmes {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.meus-filmes h1{
+.meus-filmes h1 {
     margin-bottom: 14px;
 }
 
-.meus-filmes span{
+.meus-filmes span {
     font-size: 18px;
 }
 
-.meus-filmes ul{
+.meus-filmes ul {
     width: 720px;
 }
 
-.meus-filmes ul li{
+.meus-filmes ul li {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -26,14 +25,24 @@
     margin-bottom: 14px;
 }
 
-.meus-filmes div{
+.meus-filmes div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.meus-filmes div a{
+.meus-filmes div a {
     text-decoration: none;
-    color: #116feb;
+    color: #273746;
     margin-right: 14px;
+}
+
+.btn-excluir button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-excluir button:hover {
+    cursor: pointer;
 }
