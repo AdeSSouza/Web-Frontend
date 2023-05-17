@@ -72,7 +72,6 @@
 }
 
 .grid article {
-  border: 2px solid var(--border-color);
   box-shadow: 0 0 1rem 0 var(--border-color);
   padding: 2rem;
   text-align: justify;
