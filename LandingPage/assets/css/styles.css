@@ -1,3 +1,309 @@
+:root {
+  --bg-color: #76d1d4;
+  --primary-color: #373f51;
+  --dark-color: #232b2b;
+  --bg2-color: #FFFF8F;
+  --red-color: crimson;
+  --border-color: #636977;
+  --gap: 2rem;
+}
+
+.main-bg {
+  /*background-image: url('../img/main-bg.png');*/
+  background-color: var(--bg-color);
+  background-size: cover;
+  background-position: center center;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.white-bg {
+  background: var(--dark-color);
+  color: var(--primary-color);
+}
+
+.yellow-bg {
+  background: var(--bg2-color);
+  color: var(--primary-color);
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem var(--gap);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.menu-spacing {
+  height: 6.5rem;
+}
+
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Kalam', cursive;
+  font-size: 2rem;
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kalam', cursive;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 3rem;
+}
+
+.responsive-table {
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+table {
+  min-width: 360px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+table td,
+table th {
+  white-space: nowrap;
+  padding: 1rem;
+  text-align: center;
+  border: 0.1rem solid var(--border-color);
+}
+
+tfoot td,
+table th {
+  background: var(--bg-color);
+}
+
+table th {
+  color: var(--primary-color);
+  border: 0.1rem solid var(--border-color);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu h1 {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+}
+
+.menu h1 a {
+  color: inherit;
+}
+
+.menu h1 a img {
+  width: 5rem;
+  height: 3rem;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 2.5rem;
+  font-size: 2rem;
+  color: var(--bg2-color);
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover {
+  transform: scale(1.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Kalam', cursive;
+  font-size: 2rem;
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kalam', cursive;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 3rem;
+}
+
+.responsive-table {
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+table {
+  min-width: 360px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+table td,
+table th {
+  white-space: nowrap;
+  padding: 1rem;
+  text-align: center;
+  border: 0.1rem solid var(--border-color);
+}
+
+tfoot td,
+table th {
+  background: var(--bg-color);
+}
+
+table th {
+  color: var(--primary-color);
+  border: 0.1rem solid var(--border-color);
+}
+
 .home-content {
   position: relative;
   display: grid;
