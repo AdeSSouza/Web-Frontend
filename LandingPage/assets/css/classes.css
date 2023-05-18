@@ -8,12 +8,12 @@
 }
 
 .white-bg {
-  background: var(--white-color);
+  background: var(--dark-color);
   color: var(--primary-color);
 }
 
 .yellow-bg {
-  background: var(--light-gray-color);
+  background: var(--bg2-color);
   color: var(--primary-color);
 }
 

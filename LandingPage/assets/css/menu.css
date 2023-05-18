@@ -39,7 +39,7 @@
   display: block;
   padding: 2.5rem;
   font-size: 2rem;
-  color: var(--light-gray-color);
+  color: var(--bg2-color);
   position: relative;
   transition: all 300ms ease-in-out;
 }

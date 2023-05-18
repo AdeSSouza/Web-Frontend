@@ -22,8 +22,8 @@
 .home-text-content,
 .home-img,
 .home-div {
-  border-top: 2px solid var(--light-gray-color);
-  border-bottom: 2px solid var(--light-gray-color);
+  border-top: 2px solid var(--bg2-color);
+  border-bottom: 2px solid var(--bg2-color);
 }
 
 .home-img img,
@@ -136,7 +136,7 @@
 .form-group input,
 .form-group textarea {
   border: none;
-  background: var(--light-gray-color);
+  background: var(--bg2-color);
   padding: 1rem 1.3rem;
   width: 100%;
   font-size: 2rem;
@@ -146,13 +146,13 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  box-shadow: 0 0 10px 2px var(--light-gray-color);
+  box-shadow: 0 0 10px 2px var(--bg2-color);
 }
 
 .form-group button {
   border: none;
   border-radius: 10px;
-  background: var(--light-gray-color);
+  background: var(--bg2-color);
   color: var(--primary-color);
   padding: 1rem 1rem;
   font-size: 1.7rem;
@@ -161,7 +161,7 @@
 }
 
 .form-group button:hover {
-  box-shadow: 0 0 10px 2px var(--light-gray-color);
+  box-shadow: 0 0 10px 2px var(--bg2-color);
   color: var(--bg-color);
 }
 
@@ -179,14 +179,14 @@
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: var(--white-color);
+  background: var(--dark-color);
   width: 5rem;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: var(--light-gray-color);
+  color: var(--bg2-color);
   transform: rotate(-90deg);
   border: none;
 }
@@ -256,7 +256,7 @@
     top: 2rem;
     right: 2rem;
     background: var(--primary-color);
-    color: var(--light-gray-color);
+    color: var(--bg2-color);
     font-size: 3rem;
     line-height: 3rem;
     width: 3rem;
