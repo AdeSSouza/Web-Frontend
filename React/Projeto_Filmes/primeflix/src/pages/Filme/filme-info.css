@@ -5,6 +5,9 @@
     flex-direction: column;
     max-width: 800px;
     padding: 0 8px;
+    background-color: #273746;
+    color: #DFFF00;
+    border-radius: 10px;
 }
 
 .filme-info h1 {
@@ -38,21 +41,22 @@
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.5s;
-    background-color: transparent;
+    background-color: #273746;
+    color: #FFF;
 }
 
 .area-buttons button:hover {
     background-color: #273746;
-    color: #fff;
+    color: #DFFF00;
 }
 
 .area-buttons a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
     transition: all 0.5s;
 
 }
 
 .area-buttons a:hover {
-    color: #fff;
+    color: #DFFF00;
 }

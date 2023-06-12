@@ -18,8 +18,9 @@ header {
 .favoritos {
     text-decoration: none;
     cursor: pointer;
-    background-color: #DFFF00;
+    background-color: transparent;
     padding: 5px 14px;
-    color: #000;
+    color: #DFFF00;
+    font-weight: bold;
     border-radius: 5px;
 }
