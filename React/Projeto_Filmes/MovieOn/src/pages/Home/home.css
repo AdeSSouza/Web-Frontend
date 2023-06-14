@@ -48,3 +48,16 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
+@media screen and (max-width: 860px) {
+    .lista-filmes {
+        max-width: 600px;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .lista-filmes {
+        width: 300px;
+    }
+}

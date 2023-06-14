@@ -60,3 +60,16 @@
 .area-buttons a:hover {
     color: #DFFF00;
 }
+
+@media screen and (max-width: 860px) {
+    .filme-info {
+        max-width: 600px;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .filme-info {
+        width: 300px;
+    }
+}
